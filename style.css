@@ -10,15 +10,14 @@
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
+*{
+    font-weight: 400;
+}
+
 body{
     color: var(--branco);
     background-color: var(--cor-de-fundo);
     font-family: var(--roboto);
-}
-
-.conteudo-titulo{
-    text-align: center;
-    margin-top: 80px;
 }
 
 .titulo-principal{
@@ -28,6 +27,11 @@ body{
 
 .titulo-secundario{
     font-size: 24px;
+}
+
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
 }
 
 .conteudo-senha{
@@ -76,33 +80,44 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.parametro-senha__botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.parametro-senha__texto{
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
     }
 }
-
-.parametro-senha{
-    width: 50%;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
